@@ -1,10 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-    <title>chetan</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(196, 198, 201);
+        }
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(3,200px);
+            justify-content: center;
+            margin-top: 120px;
+            gap: 20px;
+        }
+        .gallery img{
+            height: 150px;
+            width: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        @media(max-width:600px){
+            .gallery{
+                grid-template-columns: repeat(2,200px);
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="gallery">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIJJMFaSSXmTYWlz9RpQ_8Q9l5PCanVED8Lg&s" alt="parvat"> 
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2A5zogZjsfc75WH4FVynBIeH-TSusyyQBgg&s" alt="city">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrLsKJtg0k9aL3BpZQdkJXkPn3vHdx89hImQ&s" alt="jungle">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGO2fdOKUZUyilbFFoefX4w3PradgrlIN3gw&s" alt="pahad">
+        <img src="https://png.pngtree.com/thumb_back/fh260/background/20240522/pngtree-abstract-cloudy-background-beautiful-natural-streaks-of-sky-and-clouds-red-image_15684333.jpg" alt="sky">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoeQfnaS1Ao0Q6wFrt9rTvrgW5mTedicXfig&s" alt="Garden">
+     </div>
 </body>
 </html>
