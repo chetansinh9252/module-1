@@ -6,13 +6,21 @@
     <title>Document</title>
     <style>
         body{
+            height: 600px;
             background-color: rgb(196, 198, 201);
+            display: flex;
+            justify-content: center;
+             align-items: center;
+            
+           
+           
         }
         .gallery{
-            display: grid;
+            width: 60%;
+            
             grid-template-columns: repeat(3,200px);
-            justify-content: center;
-            margin-top: 120px;
+            display: inline-block;
+            
             gap: 20px;
         }
         .gallery img{
